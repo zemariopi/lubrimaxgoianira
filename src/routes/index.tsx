@@ -385,8 +385,8 @@ function LandingPage() {
         <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
             <PhotoPlaceholder
-              label="[FOTO DA LUBRIMAX]"
-              hint="Foto real da estrutura ou do atendimento."
+              label="[FOTO REAL DA FACHADA LUBRIMAX]"
+              hint="Espaço reservado para a foto real da fachada (proporção 5:4)."
               className="aspect-[5/4] w-full"
             />
             <div>
