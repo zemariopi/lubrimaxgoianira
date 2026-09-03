@@ -6,14 +6,14 @@
 export const CONTATO = {
   // Somente números, com DDI. Ex.: 5562999999999
   whatsappNumero: "55NUMEROAQUI",
-  whatsappExibicao: "[WHATSAPP]",
+  whatsappExibicao: "[WHATSAPP LUBRIMAX]",
   mensagem:
     "Olá, vim pelo site da LUBRIMAX e gostaria de consultar um atendimento para meu veículo.",
-  endereco: "[ENDEREÇO COMPLETO]",
+  endereco: "[ENDEREÇO COMPLETO LUBRIMAX]",
   cidade: "Goianira - GO",
   horario: "[HORÁRIO DE FUNCIONAMENTO]",
   // Cole aqui a URL de incorporação real do Google Maps
-  mapaEmbedUrl: "[EMBED / URL REAL DO GOOGLE MAPS]",
+  mapaEmbedUrl: "[MAPA GOOGLE LUBRIMAX]",
 };
 
 export const whatsappHref = `https://wa.me/${CONTATO.whatsappNumero}?text=${encodeURIComponent(
@@ -51,13 +51,23 @@ export const SERVICOS = [
     descricao: "Reposição e verificação de fluidos essenciais.",
   },
   {
-    icone: "ClipboardCheck",
-    nome: "Verificação de itens essenciais",
-    descricao: "Conferência de pontos básicos de manutenção.",
+    icone: "Disc3",
+    nome: "Sistema de freios",
+    descricao: "Verificação dos itens do sistema de freios.",
+  },
+  {
+    icone: "Thermometer",
+    nome: "Sistema de arrefecimento",
+    descricao: "Cuidados com o sistema de arrefecimento do motor.",
+  },
+  {
+    icone: "Snowflake",
+    nome: "Ar-condicionado automotivo",
+    descricao: "Atendimento para o ar-condicionado do veículo.",
   },
   {
     icone: "Wrench",
-    nome: "Outros serviços automotivos",
+    nome: "Outros cuidados automotivos",
     descricao: "Consulte a equipe para confirmar o atendimento.",
   },
 ] as const;
@@ -89,7 +99,8 @@ export const FAQ = [
       "Consulte a equipe pelo WhatsApp para confirmar o produto ou serviço que você procura.",
   },
   {
-    pergunta: "Como chegar à LUBRIMAX?",
-    resposta: "A LUBRIMAX está em Goianira-GO. Consulte o mapa disponível nesta página.",
+    pergunta: "Onde fica a LUBRIMAX?",
+    resposta:
+      "A LUBRIMAX fica em Goianira-GO. O endereço completo será informado nesta página.",
   },
 ];

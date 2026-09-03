@@ -1,10 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Beaker,
-  ClipboardCheck,
   Container,
+  Disc3,
   Droplets,
   Filter,
+  Snowflake,
+  Thermometer,
   Wrench,
   MessageCircle,
   MapPin,
@@ -78,7 +80,9 @@ const ICONES: Record<string, LucideIcon> = {
   Filter,
   Container,
   Beaker,
-  ClipboardCheck,
+  Disc3,
+  Thermometer,
+  Snowflake,
   Wrench,
 };
 
@@ -198,8 +202,8 @@ function LandingPage() {
 
             <div className="animate-in fade-in duration-1000">
               <PhotoPlaceholder
-                label="[FOTO REAL DA LUBRIMAX OU DO SERVIÇO]"
-                hint="Substitua por uma foto real da oficina ou do serviço sendo realizado."
+                label="[FOTO PRINCIPAL REAL DA LUBRIMAX]"
+                hint="Espaço reservado para a foto principal real (proporção 4:3)."
                 className="aspect-[4/3] w-full border-white/10 bg-white/5 text-graphite-foreground"
               />
             </div>
@@ -328,11 +332,14 @@ function LandingPage() {
               subtitle="Espaço reservado para fotos reais: fachada, área de atendimento, troca de óleo em andamento e produtos."
             />
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {["[FOTO REAL 01]", "[FOTO REAL 02]", "[FOTO REAL 03]", "[FOTO REAL 04]"].map(
-                (label) => (
-                  <PhotoPlaceholder key={label} label={label} className="aspect-[4/5] bg-card" />
-                ),
-              )}
+              {[
+                "[FOTO REAL LUBRIMAX 01]",
+                "[FOTO REAL LUBRIMAX 02]",
+                "[FOTO REAL LUBRIMAX 03]",
+                "[FOTO REAL LUBRIMAX 04]",
+              ].map((label) => (
+                <PhotoPlaceholder key={label} label={label} className="aspect-[4/5] bg-card" />
+              ))}
             </div>
           </div>
         </section>
@@ -382,8 +389,8 @@ function LandingPage() {
         <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
             <PhotoPlaceholder
-              label="[FOTO DA LUBRIMAX]"
-              hint="Foto real da estrutura ou do atendimento."
+              label="[FOTO REAL DA FACHADA LUBRIMAX]"
+              hint="Espaço reservado para a foto real da fachada (proporção 5:4)."
               className="aspect-[5/4] w-full"
             />
             <div>
@@ -443,7 +450,7 @@ function LandingPage() {
                   <div className="flex h-[320px] w-full flex-col items-center justify-center gap-3 px-6 text-center sm:h-[420px]">
                     <MapPin className="size-6 text-brand" />
                     <p className="font-display text-sm font-semibold">
-                      [EMBED / URL REAL DO GOOGLE MAPS]
+                      [MAPA GOOGLE LUBRIMAX]
                     </p>
                     <p className="max-w-[34ch] text-xs text-muted-foreground">
                       Insira a URL de incorporação do Google Maps para exibir o mapa aqui.
