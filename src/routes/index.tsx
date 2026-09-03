@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Beaker,
-  ClipboardCheck,
   Container,
   Disc3,
   Droplets,
@@ -81,7 +80,6 @@ const ICONES: Record<string, LucideIcon> = {
   Filter,
   Container,
   Beaker,
-  ClipboardCheck,
   Disc3,
   Thermometer,
   Snowflake,
