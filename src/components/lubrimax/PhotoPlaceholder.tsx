@@ -32,11 +32,11 @@ export function PhotoPlaceholder({ label, hint, className }: PhotoPlaceholderPro
       <span className="relative flex size-11 items-center justify-center rounded-full bg-accent text-accent-foreground">
         <ImageIcon className="size-5" />
       </span>
-      <span className="relative font-display text-sm font-semibold tracking-wide text-foreground">
+      <span className="relative font-display text-sm font-semibold tracking-wide text-current">
         {label}
       </span>
       {hint ? (
-        <span className="relative max-w-[24ch] text-xs text-muted-foreground">{hint}</span>
+        <span className="relative max-w-[24ch] text-xs opacity-70">{hint}</span>
       ) : null}
     </div>
   );
