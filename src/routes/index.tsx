@@ -29,6 +29,7 @@ import { Header, Logo } from "@/components/lubrimax/Header";
 import { FloatingWhatsApp } from "@/components/lubrimax/FloatingWhatsApp";
 import { PhotoPlaceholder } from "@/components/lubrimax/PhotoPlaceholder";
 import { AVALIACOES, CONTATO, FAQ, NAV, SERVICOS, whatsappHref } from "@/lib/lubrimax";
+import fachadaAsset from "@/assets/lubrimax-fachada.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
