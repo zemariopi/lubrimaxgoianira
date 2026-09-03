@@ -328,11 +328,14 @@ function LandingPage() {
               subtitle="Espaço reservado para fotos reais: fachada, área de atendimento, troca de óleo em andamento e produtos."
             />
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {["[FOTO REAL 01]", "[FOTO REAL 02]", "[FOTO REAL 03]", "[FOTO REAL 04]"].map(
-                (label) => (
-                  <PhotoPlaceholder key={label} label={label} className="aspect-[4/5] bg-card" />
-                ),
-              )}
+              {[
+                "[FOTO REAL LUBRIMAX 01]",
+                "[FOTO REAL LUBRIMAX 02]",
+                "[FOTO REAL LUBRIMAX 03]",
+                "[FOTO REAL LUBRIMAX 04]",
+              ].map((label) => (
+                <PhotoPlaceholder key={label} label={label} className="aspect-[4/5] bg-card" />
+              ))}
             </div>
           </div>
         </section>
