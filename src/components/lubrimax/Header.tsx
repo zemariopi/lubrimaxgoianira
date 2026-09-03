@@ -7,7 +7,7 @@ export function Logo({ className }: { className?: string }) {
   // [LOGO LUBRIMAX] — substitua por <img src="/logo.svg" alt="LUBRIMAX" /> quando disponível.
   return (
     <a href="#inicio" className={cn("group flex items-center gap-2.5", className)}>
-      <span className="flex h-9 w-9 items-center justify-center rounded-md bg-brand font-display text-lg font-900 font-extrabold text-brand-foreground">
+      <span className="flex h-9 w-9 items-center justify-center rounded-md bg-brand font-display text-lg font-extrabold text-brand-foreground">
         L
       </span>
       <span className="font-display text-xl font-extrabold tracking-tight">
