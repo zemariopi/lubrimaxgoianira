@@ -3,8 +3,11 @@ import {
   Beaker,
   ClipboardCheck,
   Container,
+  Disc3,
   Droplets,
   Filter,
+  Snowflake,
+  Thermometer,
   Wrench,
   MessageCircle,
   MapPin,
@@ -79,6 +82,9 @@ const ICONES: Record<string, LucideIcon> = {
   Container,
   Beaker,
   ClipboardCheck,
+  Disc3,
+  Thermometer,
+  Snowflake,
   Wrench,
 };
 
