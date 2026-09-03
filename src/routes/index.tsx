@@ -201,10 +201,11 @@ function LandingPage() {
             </div>
 
             <div className="animate-in fade-in duration-1000">
-              <PhotoPlaceholder
-                label="[FOTO PRINCIPAL REAL DA LUBRIMAX]"
-                hint="Espaço reservado para a foto principal real (proporção 4:3)."
-                className="aspect-[4/3] w-full border-white/10 bg-white/5 text-graphite-foreground"
+              <img
+                src={fachadaAsset.url}
+                alt="Fachada da LUBRIMAX, centro de troca de óleo e distribuidora de lubrificantes em Goianira-GO"
+                loading="eager"
+                className="aspect-[4/3] w-full rounded-2xl border border-white/10 object-cover"
               />
             </div>
           </div>
