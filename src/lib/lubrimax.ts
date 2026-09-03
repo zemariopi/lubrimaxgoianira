@@ -5,8 +5,8 @@
 
 export const CONTATO = {
   // Somente números, com DDI. Ex.: 5562999999999
-  whatsappNumero: "55NUMEROAQUI",
-  whatsappExibicao: "[WHATSAPP LUBRIMAX]",
+  whatsappNumero: "5562984521986",
+  whatsappExibicao: "(62) 98452-1986",
   mensagem:
     "Olá, vim pelo site da LUBRIMAX e gostaria de consultar um atendimento para meu veículo.",
   endereco: "[ENDEREÇO COMPLETO LUBRIMAX]",

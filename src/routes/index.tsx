@@ -29,6 +29,7 @@ import { Header, Logo } from "@/components/lubrimax/Header";
 import { FloatingWhatsApp } from "@/components/lubrimax/FloatingWhatsApp";
 import { PhotoPlaceholder } from "@/components/lubrimax/PhotoPlaceholder";
 import { AVALIACOES, CONTATO, FAQ, NAV, SERVICOS, whatsappHref } from "@/lib/lubrimax";
+import fachadaAsset from "@/assets/lubrimax-fachada.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -201,10 +202,11 @@ function LandingPage() {
             </div>
 
             <div className="animate-in fade-in duration-1000">
-              <PhotoPlaceholder
-                label="[FOTO PRINCIPAL REAL DA LUBRIMAX]"
-                hint="Espaço reservado para a foto principal real (proporção 4:3)."
-                className="aspect-[4/3] w-full border-white/10 bg-white/5 text-graphite-foreground"
+              <img
+                src={fachadaAsset.url}
+                alt="Fachada da LUBRIMAX, centro de troca de óleo e distribuidora de lubrificantes em Goianira-GO"
+                loading="eager"
+                className="aspect-[4/3] w-full rounded-2xl border border-white/10 object-cover"
               />
             </div>
           </div>
@@ -388,10 +390,11 @@ function LandingPage() {
         {/* SOBRE */}
         <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-            <PhotoPlaceholder
-              label="[FOTO REAL DA FACHADA LUBRIMAX]"
-              hint="Espaço reservado para a foto real da fachada (proporção 5:4)."
-              className="aspect-[5/4] w-full"
+            <img
+              src={fachadaAsset.url}
+              alt="Fachada amarela e preta da LUBRIMAX em Goianira-GO"
+              loading="lazy"
+              className="aspect-[5/4] w-full rounded-2xl border border-border object-cover"
             />
             <div>
               <SectionHeading
