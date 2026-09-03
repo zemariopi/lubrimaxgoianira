@@ -446,7 +446,7 @@ function LandingPage() {
                   <div className="flex h-[320px] w-full flex-col items-center justify-center gap-3 px-6 text-center sm:h-[420px]">
                     <MapPin className="size-6 text-brand" />
                     <p className="font-display text-sm font-semibold">
-                      [EMBED / URL REAL DO GOOGLE MAPS]
+                      [MAPA GOOGLE LUBRIMAX]
                     </p>
                     <p className="max-w-[34ch] text-xs text-muted-foreground">
                       Insira a URL de incorporação do Google Maps para exibir o mapa aqui.
