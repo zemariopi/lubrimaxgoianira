@@ -198,8 +198,8 @@ function LandingPage() {
 
             <div className="animate-in fade-in duration-1000">
               <PhotoPlaceholder
-                label="[FOTO REAL DA LUBRIMAX OU DO SERVIÇO]"
-                hint="Substitua por uma foto real da oficina ou do serviço sendo realizado."
+                label="[FOTO PRINCIPAL REAL DA LUBRIMAX]"
+                hint="Espaço reservado para a foto principal real (proporção 4:3)."
                 className="aspect-[4/3] w-full border-white/10 bg-white/5 text-graphite-foreground"
               />
             </div>
