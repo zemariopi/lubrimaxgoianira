@@ -203,11 +203,12 @@ function LandingPage() {
 
             <div className="animate-in fade-in duration-1000">
               <img
-                src={fachadaAsset.url}
-                alt="Fachada da LUBRIMAX, centro de troca de óleo e distribuidora de lubrificantes em Goianira-GO"
+                src={heroAsset.url}
+                alt="Equipamento de serviço automotivo na Lubrimax em Goianira"
                 loading="eager"
-                className="aspect-[4/3] w-full rounded-2xl border border-white/10 object-cover"
+                className="aspect-[4/3] w-full rounded-2xl border border-white/10 object-cover object-center"
               />
+
             </div>
           </div>
         </section>
