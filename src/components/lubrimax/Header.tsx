@@ -2,20 +2,19 @@ import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { NAV, whatsappHref } from "@/lib/lubrimax";
 import { cn } from "@/lib/utils";
-import logoAsset from "@/assets/lubrimax-logo.png.asset.json";
+import logoAsset from "@/assets/lubrimax-logo-completa.png.asset.json";
 
 export function Logo({ className }: { className?: string }) {
   return (
     <a
       href="#inicio"
       aria-label="LUBRIMAX — início"
-      className={cn("group flex items-center", className)}
+      className={cn("group flex min-w-0 items-center py-1", className)}
     >
       <img
         src={logoAsset.url}
         alt="LUBRIMAX Lubrificantes"
-        style={{ width: "auto", height: "auto" }}
-        className="block max-h-11 w-auto max-w-[240px] object-contain object-left lg:max-h-14 lg:max-w-[300px]"
+        className="block h-auto max-h-12 w-auto max-w-[180px] object-contain object-left sm:max-w-[220px] lg:max-h-14 lg:max-w-[250px]"
         loading="eager"
       />
     </a>
