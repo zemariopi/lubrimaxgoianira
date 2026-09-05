@@ -4,17 +4,18 @@ import { NAV, whatsappHref } from "@/lib/lubrimax";
 import { cn } from "@/lib/utils";
 
 export function Logo({ className }: { className?: string }) {
-  // Substitua este placeholder por <img src="/logo.svg" alt="LUBRIMAX" className="h-9 w-auto" />
-  // assim que a logo oficial for disponibilizada.
   return (
     <a
       href="#inicio"
       aria-label="LUBRIMAX — início"
       className={cn("group flex items-center", className)}
     >
-      <span className="flex h-9 items-center rounded-md border border-dashed border-brand/50 px-3 font-display text-[11px] font-bold uppercase tracking-[0.12em] text-brand">
-        [Logo oficial LUBRIMAX]
-      </span>
+      <img
+        src={logoAsset.url}
+        alt="LUBRIMAX Lubrificantes"
+        className="h-10 w-auto lg:h-11"
+        loading="eager"
+      />
     </a>
   );
 }
