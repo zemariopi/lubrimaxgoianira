@@ -14,7 +14,8 @@ export function Logo({ className }: { className?: string }) {
       <img
         src={logoAsset.url}
         alt="LUBRIMAX Lubrificantes"
-        className="h-auto max-h-10 w-auto max-w-[180px] object-contain lg:max-h-12 lg:max-w-[220px]"
+        style={{ width: "auto", height: "auto" }}
+        className="block max-h-11 w-auto max-w-[240px] object-contain object-left lg:max-h-14 lg:max-w-[300px]"
         loading="eager"
       />
     </a>

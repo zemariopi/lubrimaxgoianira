@@ -13,7 +13,7 @@ import {
   Clock,
   Phone,
   ArrowRight,
-  Quote,
+  Star,
   Handshake,
   Timer,
   Navigation,
@@ -28,9 +28,8 @@ import {
 import { Header, Logo } from "@/components/lubrimax/Header";
 import { FloatingWhatsApp } from "@/components/lubrimax/FloatingWhatsApp";
 
-import { AVALIACOES, CONTATO, FAQ, NAV, SERVICOS, whatsappHref } from "@/lib/lubrimax";
+import { CONTATO, FAQ, NAV, SERVICOS, whatsappHref } from "@/lib/lubrimax";
 import fachadaAsset from "@/assets/lubrimax-fachada.png.asset.json";
-import heroAsset from "@/assets/lubrimax-182551.png.asset.json";
 import galeria1 from "@/assets/lubrimax-182627.png.asset.json";
 import galeria2 from "@/assets/lubrimax-182604.png.asset.json";
 import galeria3 from "@/assets/lubrimax-182645.png.asset.json";
@@ -209,8 +208,8 @@ function LandingPage() {
 
             <div className="animate-in fade-in duration-1000">
               <img
-                src={heroAsset.url}
-                alt="Equipamento de serviço automotivo na Lubrimax em Goianira"
+                src={fachadaAsset.url}
+                alt="Fachada da Lubrimax em Goianira"
                 loading="eager"
                 className="aspect-[4/3] w-full rounded-2xl border border-white/10 object-cover object-center"
               />
@@ -366,21 +365,22 @@ function LandingPage() {
             eyebrow="Avaliações"
             title="O que os clientes dizem sobre a LUBRIMAX."
           />
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
-            {AVALIACOES.map((item) => (
-              <figure
-                key={item.autor}
-                className="rounded-2xl border border-border bg-card p-6"
+          <div className="mt-10 flex justify-center">
+            <div className="w-full max-w-xl rounded-2xl border border-border bg-card p-8 text-center">
+              <div
+                className="flex items-center justify-center gap-1 text-brand"
+                aria-label="Nota 5,0 de 5 no Google"
               >
-                <Quote className="size-6 text-brand" />
-                <blockquote className="mt-4 text-sm leading-relaxed text-card-foreground">
-                  {item.texto}
-                </blockquote>
-                <figcaption className="mt-5 border-t border-border pt-4 text-sm font-semibold text-muted-foreground">
-                  {item.autor}
-                </figcaption>
-              </figure>
-            ))}
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <Star key={i} className="size-5 fill-current" />
+                ))}
+              </div>
+              <p className="mt-4 text-2xl font-extrabold text-card-foreground">5,0 no Google</p>
+              <p className="mt-1 text-sm text-muted-foreground">1 avaliação no Google</p>
+              <p className="mt-4 text-xs text-muted-foreground">
+                Avaliação pública disponível no Google.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -405,8 +405,8 @@ function LandingPage() {
         <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
             <img
-              src={fachadaAsset.url}
-              alt="Fachada amarela e preta da LUBRIMAX em Goianira-GO"
+              src={galeria4.url}
+              alt="Óleos e lubrificantes nas prateleiras da Lubrimax em Goianira"
               loading="lazy"
               className="aspect-[5/4] w-full rounded-2xl border border-border object-cover"
             />
