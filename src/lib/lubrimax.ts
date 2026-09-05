@@ -9,11 +9,11 @@ export const CONTATO = {
   whatsappExibicao: "(62) 98452-1986",
   mensagem:
     "Olá, vim pelo site da LUBRIMAX e gostaria de consultar um atendimento para meu veículo.",
-  endereco: "[ENDEREÇO COMPLETO LUBRIMAX]",
+  endereco: "R. Faria Lima, Goianira - GO, 75370-000",
   cidade: "Goianira - GO",
-  horario: "[HORÁRIO DE FUNCIONAMENTO]",
-  // Cole aqui a URL de incorporação real do Google Maps
-  mapaEmbedUrl: "[MAPA GOOGLE LUBRIMAX]",
+  horario: "Segunda a sexta: 8h às 18h · Sábado: 8h às 12h · Domingo: fechado",
+  mapaEmbedUrl:
+    "https://www.google.com/maps?q=R.%20Faria%20Lima%2C%20Goianira%20-%20GO%2C%2075370-000&output=embed",
 };
 
 export const whatsappHref = `https://wa.me/${CONTATO.whatsappNumero}?text=${encodeURIComponent(
