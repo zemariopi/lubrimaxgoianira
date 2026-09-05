@@ -406,8 +406,8 @@ function LandingPage() {
         <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
             <img
-              src={fachadaAsset.url}
-              alt="Fachada amarela e preta da LUBRIMAX em Goianira-GO"
+              src={galeria4.url}
+              alt="Óleos e lubrificantes nas prateleiras da Lubrimax em Goianira"
               loading="lazy"
               className="aspect-[5/4] w-full rounded-2xl border border-border object-cover"
             />
