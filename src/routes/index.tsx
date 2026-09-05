@@ -34,6 +34,8 @@ import galeria1 from "@/assets/lubrimax-182627.png.asset.json";
 import galeria2 from "@/assets/lubrimax-182604.png.asset.json";
 import galeria3 from "@/assets/lubrimax-182645.png.asset.json";
 import galeria4 from "@/assets/lubrimax-182515.png.asset.json";
+import nossaHistoria from "@/assets/lubrimax-nossa-historia.png.asset.json";
+
 
 
 export const Route = createFileRoute("/")({
@@ -361,28 +363,14 @@ function LandingPage() {
 
         {/* AVALIAÇÕES */}
         <section id="avaliacoes" className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
-          <SectionHeading
-            eyebrow="Avaliações"
-            title="O que os clientes dizem sobre a LUBRIMAX."
+          <img
+            src={nossaHistoria.url}
+            alt="Equipe e fachada da Lubrimax em Goianira"
+            loading="lazy"
+            className="w-full rounded-2xl border border-border object-contain"
           />
-          <div className="mt-10 flex justify-center">
-            <div className="w-full max-w-xl rounded-2xl border border-border bg-card p-8 text-center">
-              <div
-                className="flex items-center justify-center gap-1 text-brand"
-                aria-label="Nota 5,0 de 5 no Google"
-              >
-                {[0, 1, 2, 3, 4].map((i) => (
-                  <Star key={i} className="size-5 fill-current" />
-                ))}
-              </div>
-              <p className="mt-4 text-2xl font-extrabold text-card-foreground">5,0 no Google</p>
-              <p className="mt-1 text-sm text-muted-foreground">1 avaliação no Google</p>
-              <p className="mt-4 text-xs text-muted-foreground">
-                Avaliação pública disponível no Google.
-              </p>
-            </div>
-          </div>
         </section>
+
 
         {/* CTA INTERMEDIÁRIO */}
         <section className="bg-brand text-brand-foreground">
