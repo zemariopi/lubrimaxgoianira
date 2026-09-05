@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { NAV, whatsappHref } from "@/lib/lubrimax";
 import { cn } from "@/lib/utils";
+import logoAsset from "@/assets/lubrimax-logo.png.asset.json";
 
 export function Logo({ className }: { className?: string }) {
   return (
