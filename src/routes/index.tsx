@@ -336,14 +336,21 @@ function LandingPage() {
             />
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                "[FOTO REAL LUBRIMAX 01]",
-                "[FOTO REAL LUBRIMAX 02]",
-                "[FOTO REAL LUBRIMAX 03]",
-                "[FOTO REAL LUBRIMAX 04]",
-              ].map((label) => (
-                <PhotoPlaceholder key={label} label={label} className="aspect-[4/5] bg-card" />
+                { src: galeria1.url, alt: "Óleos e lubrificantes nas prateleiras da Lubrimax em Goianira" },
+                { src: galeria2.url, alt: "Equipamento automotivo utilizado na Lubrimax em Goianira" },
+                { src: galeria3.url, alt: "Equipamentos da Lubrimax em Goianira" },
+                { src: galeria4.url, alt: "Produtos automotivos disponíveis na Lubrimax em Goianira" },
+              ].map((foto) => (
+                <img
+                  key={foto.src}
+                  src={foto.src}
+                  alt={foto.alt}
+                  loading="lazy"
+                  className="aspect-[4/5] w-full rounded-2xl border border-border bg-card object-cover object-center"
+                />
               ))}
             </div>
+
           </div>
         </section>
 
