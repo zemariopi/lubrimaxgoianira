@@ -366,21 +366,22 @@ function LandingPage() {
             eyebrow="Avaliações"
             title="O que os clientes dizem sobre a LUBRIMAX."
           />
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
-            {AVALIACOES.map((item) => (
-              <figure
-                key={item.autor}
-                className="rounded-2xl border border-border bg-card p-6"
+          <div className="mt-10 flex justify-center">
+            <div className="w-full max-w-xl rounded-2xl border border-border bg-card p-8 text-center">
+              <div
+                className="flex items-center justify-center gap-1 text-brand"
+                aria-label="Nota 5,0 de 5 no Google"
               >
-                <Quote className="size-6 text-brand" />
-                <blockquote className="mt-4 text-sm leading-relaxed text-card-foreground">
-                  {item.texto}
-                </blockquote>
-                <figcaption className="mt-5 border-t border-border pt-4 text-sm font-semibold text-muted-foreground">
-                  {item.autor}
-                </figcaption>
-              </figure>
-            ))}
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <Star key={i} className="size-5 fill-current" />
+                ))}
+              </div>
+              <p className="mt-4 text-2xl font-extrabold text-card-foreground">5,0 no Google</p>
+              <p className="mt-1 text-sm text-muted-foreground">1 avaliação no Google</p>
+              <p className="mt-4 text-xs text-muted-foreground">
+                Avaliação pública disponível no Google.
+              </p>
+            </div>
           </div>
         </section>
 
