@@ -13,7 +13,7 @@ import {
   Clock,
   Phone,
   ArrowRight,
-  Star,
+  
   Handshake,
   Timer,
   Navigation,
