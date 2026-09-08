@@ -27,6 +27,7 @@ import {
 } from "@/components/ui/accordion";
 import { Header, Logo } from "@/components/lubrimax/Header";
 import { FloatingWhatsApp } from "@/components/lubrimax/FloatingWhatsApp";
+import { PhotoPlaceholder } from "@/components/lubrimax/PhotoPlaceholder";
 
 import { CONTATO, FAQ, NAV, SERVICOS, whatsappHref } from "@/lib/lubrimax";
 import fachadaAsset from "@/assets/lubrimax-fachada.png.asset.json";
@@ -34,7 +35,7 @@ import galeria1 from "@/assets/lubrimax-182627.png.asset.json";
 import galeria2 from "@/assets/lubrimax-182604.png.asset.json";
 import galeria3 from "@/assets/lubrimax-182645.png.asset.json";
 import galeria4 from "@/assets/lubrimax-182515.png.asset.json";
-import nossaHistoria from "@/assets/lubrimax-nossa-historia.png.asset.json";
+
 
 
 
