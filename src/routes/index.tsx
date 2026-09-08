@@ -27,10 +27,10 @@ import {
 } from "@/components/ui/accordion";
 import { Header, Logo } from "@/components/lubrimax/Header";
 import { FloatingWhatsApp } from "@/components/lubrimax/FloatingWhatsApp";
-import { PhotoPlaceholder } from "@/components/lubrimax/PhotoPlaceholder";
 
 import { CONTATO, FAQ, NAV, SERVICOS, whatsappHref } from "@/lib/lubrimax";
 import fachadaAsset from "@/assets/lubrimax-fachada.png.asset.json";
+import proprietarioAsset from "@/assets/lubrimax-proprietario.png.asset.json";
 import galeria1 from "@/assets/lubrimax-182627.png.asset.json";
 import galeria2 from "@/assets/lubrimax-182604.png.asset.json";
 import galeria3 from "@/assets/lubrimax-182645.png.asset.json";
@@ -371,10 +371,11 @@ function LandingPage() {
           />
 
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-[0.85fr_1.15fr] md:items-stretch md:gap-6">
-            <PhotoPlaceholder
-              label="[FOTO DO PROPRIETÁRIO LUBRIMAX]"
-              hint="Envie a foto original do homem com a camisa da LUBRIMAX."
-              className="aspect-[4/5] w-full md:aspect-auto md:h-full md:min-h-[420px]"
+            <img
+              src={proprietarioAsset.url}
+              alt="Proprietário da LUBRIMAX com a camisa da loja"
+              loading="lazy"
+              className="aspect-[4/5] w-full rounded-2xl border border-border object-cover object-center md:aspect-auto md:h-full md:min-h-[420px]"
             />
             <img
               src={fachadaAsset.url}
