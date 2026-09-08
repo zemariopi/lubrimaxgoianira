@@ -13,7 +13,7 @@ import {
   Clock,
   Phone,
   ArrowRight,
-  Star,
+  
   Handshake,
   Timer,
   Navigation,
@@ -27,6 +27,7 @@ import {
 } from "@/components/ui/accordion";
 import { Header, Logo } from "@/components/lubrimax/Header";
 import { FloatingWhatsApp } from "@/components/lubrimax/FloatingWhatsApp";
+import { PhotoPlaceholder } from "@/components/lubrimax/PhotoPlaceholder";
 
 import { CONTATO, FAQ, NAV, SERVICOS, whatsappHref } from "@/lib/lubrimax";
 import fachadaAsset from "@/assets/lubrimax-fachada.png.asset.json";
@@ -34,7 +35,7 @@ import galeria1 from "@/assets/lubrimax-182627.png.asset.json";
 import galeria2 from "@/assets/lubrimax-182604.png.asset.json";
 import galeria3 from "@/assets/lubrimax-182645.png.asset.json";
 import galeria4 from "@/assets/lubrimax-182515.png.asset.json";
-import nossaHistoria from "@/assets/lubrimax-nossa-historia.png.asset.json";
+
 
 
 
@@ -361,15 +362,44 @@ function LandingPage() {
           </div>
         </section>
 
-        {/* AVALIAÇÕES */}
+        {/* NOSSA HISTÓRIA */}
         <section id="avaliacoes" className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
-          <img
-            src={nossaHistoria.url}
-            alt="Equipe e fachada da Lubrimax em Goianira"
-            loading="lazy"
-            className="w-full rounded-2xl border border-border object-contain"
+          <SectionHeading
+            eyebrow="Nossa história"
+            title="Trabalho sério, resultado no seu dia a dia."
+            subtitle="A LUBRIMAX nasce com o propósito de oferecer um atendimento de confiança, produtos de qualidade e serviços que realmente fazem a diferença na vida de quem depende do seu veículo."
           />
+
+          <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-[0.85fr_1.15fr] md:items-stretch md:gap-6">
+            <PhotoPlaceholder
+              label="[FOTO DO PROPRIETÁRIO LUBRIMAX]"
+              hint="Envie a foto original do homem com a camisa da LUBRIMAX."
+              className="aspect-[4/5] w-full md:aspect-auto md:h-full md:min-h-[420px]"
+            />
+            <img
+              src={fachadaAsset.url}
+              alt="Fachada da loja LUBRIMAX em Goianira"
+              loading="lazy"
+              className="aspect-[4/3] w-full rounded-2xl border border-border object-cover object-center md:aspect-auto md:h-full md:min-h-[420px]"
+            />
+          </div>
+
+          <div className="mt-6 grid grid-cols-1 gap-5 rounded-2xl border border-brand/30 bg-brand/5 p-6 md:grid-cols-[auto_1fr] md:items-center md:gap-8 md:p-8">
+            <div className="flex min-w-0 items-center gap-4">
+              <span className="inline-flex size-11 shrink-0 items-center justify-center rounded-xl text-brand">
+                <Handshake className="size-7" />
+              </span>
+              <p className="text-lg font-extrabold leading-snug text-foreground">
+                Atendimento de quem entende do assunto.
+              </p>
+            </div>
+            <p className="text-sm leading-relaxed text-muted-foreground md:border-l md:border-brand/30 md:pl-8">
+              Aqui você fala com quem vive o dia a dia da oficina e está pronto para te ajudar
+              a cuidar do seu carro com segurança.
+            </p>
+          </div>
         </section>
+
 
 
         {/* CTA INTERMEDIÁRIO */}
