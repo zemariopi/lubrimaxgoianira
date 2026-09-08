@@ -371,10 +371,11 @@ function LandingPage() {
           />
 
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-[0.85fr_1.15fr] md:items-stretch md:gap-6">
-            <PhotoPlaceholder
-              label="[FOTO DO PROPRIETÁRIO LUBRIMAX]"
-              hint="Envie a foto original do homem com a camisa da LUBRIMAX."
-              className="aspect-[4/5] w-full md:aspect-auto md:h-full md:min-h-[420px]"
+            <img
+              src={proprietarioAsset.url}
+              alt="Proprietário da LUBRIMAX com a camisa da loja"
+              loading="lazy"
+              className="aspect-[4/5] w-full rounded-2xl border border-border object-cover object-center md:aspect-auto md:h-full md:min-h-[420px]"
             />
             <img
               src={fachadaAsset.url}
